@@ -5,4 +5,6 @@
 #define RCUTILS_LOG_ERROR_EXPRESSION
 #define RCUTILS_LOG_ERROR
 
+#define ROS_PACKAGE_NAME ""
+
 #endif

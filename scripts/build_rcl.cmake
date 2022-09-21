@@ -39,5 +39,6 @@ SET(RCL_SOURCES
 
 add_library(rcl ${RCL_SOURCES})
 
+include_directories(${CMAKE_SOURCE_DIR}/rcl/rcl_yaml_param_parser/include)
 target_include_directories(rcl PUBLIC ${RCUTILS_DIR}/include)
 target_include_directories(rcl PUBLIC ${RCL_DIR}/include)

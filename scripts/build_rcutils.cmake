@@ -40,5 +40,8 @@ add_library(rcutils ${RCUTILS_SOURCES})
 
 target_compile_definitions(rcutils PUBLIC _GNU_SOURCE)
 
-target_include_directories(rcutils PUBLIC ${RCUTILS_DIR}/include)
-target_include_directories(rcutils PUBLIC ${CMAKE_SOURCE_DIR}/rcpatches/include)
+include_directories(${RCUTILS_DIR}/include)
+include_directories(${CMAKE_SOURCE_DIR}/rcpatches/include)
+
+#target_include_directories(rcutils PUBLIC ${RCUTILS_DIR}/include)
+#target_include_directories(rcutils PUBLIC ${CMAKE_SOURCE_DIR}/rcpatches/include)
