@@ -3,5 +3,6 @@ project(TELEOP_CLIENT)
 
 include(scripts/build_rcutils.cmake)
 include(scripts/build_rmw.cmake)
+include(scripts/build_rosidl.cmake)
 include(scripts/build_rcl.cmake)
 #include(scripts/build_rclc.cmake)
